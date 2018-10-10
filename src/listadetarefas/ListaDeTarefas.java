@@ -3,19 +3,6 @@ package listadetarefas;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/*As funções são:
-Ver a lista
-Adicionar Itens
-Remover Itens
-
-Tipo
-
-Lista de tarefas
-
-1 - Comprar pão
-2 - Comprar leite
-
-comando: (Aqui você digita "add Comprar bolacha" ou "rm 2"*/
 public class ListaDeTarefas {
     public static void main(String[] args) {
         Scanner scan  = new Scanner(System.in);
@@ -49,6 +36,7 @@ public class ListaDeTarefas {
         }while(opcao != 0);
     }
     
+    // Incluir nova tarefa
     public static void incluir(ArrayList<String> lista){
         Scanner incluir = new Scanner(System.in);
         String tarefa;
@@ -58,6 +46,7 @@ public class ListaDeTarefas {
         lista.add(tarefa);
     }
     
+    //Excluir tarefa
     public static void excluir(ArrayList<String> lista){
         Scanner del = new Scanner(System.in);
         int i;
@@ -77,6 +66,7 @@ public class ListaDeTarefas {
         
     }
     
+    //Listar tarefas
     public static void listar(ArrayList<String> lista){
         System.out.println("");
         System.out.println("====== Minhas tarefas ======");
